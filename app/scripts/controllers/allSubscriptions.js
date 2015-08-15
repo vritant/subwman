@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name subwmanApp.controller:MainCtrl
+ * @name subwmanApp.controller:AllSubscriptionsCtrl
  * @description
- * # MainCtrl
+ * # AllSubscriptionsCtrl
  * Controller of the subwmanApp
  */
 angular.module('subwmanApp')
-  .controller('MainCtrl', function () {
+  .controller('AllSubscriptionsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

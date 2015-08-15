@@ -20,17 +20,22 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+      .when('/installedProducts', {
+        templateUrl: 'views/installedProducts.html',
+        controller: 'InstalledProductsCtrl',
+        controllerAs: 'installedProducts'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/mySubscriptions', {
+        templateUrl: 'views/mySubscriptions.html',
+        controller: 'MySubscriptionsCtrl',
+        controllerAs: 'mySubscriptions'
+      })
+      .when('/availableSubscriptions', {
+        templateUrl: 'views/availableSubscriptions.html',
+        controller: 'AvailableSubscriptionsCtrl',
+        controllerAs: 'availableSubscriptions'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/installedProducts'
       });
   });
