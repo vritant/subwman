@@ -1,0 +1,19 @@
+{
+	"baseName": "subwman",
+	"entities": [
+		{
+			"name": "installedProducts",
+			"attrs": [
+				{
+					"attrName": "name",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		}
+	],
+	"resources": []
+}
