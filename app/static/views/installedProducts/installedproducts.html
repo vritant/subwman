@@ -54,9 +54,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" ng-click="cancel()">Cancel
-                </button>
-                <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary" ng-click="cancel()">Close</button>
             </div>
         </form>
     </script>
@@ -92,7 +90,7 @@
                 <td>{{installedProducts.endDate}}</td>
                 <td><button type="submit"
                             ng-click="update(installedProducts.id)"
-                            class="btn">View
+                            class="btn btn-primary">View
                     </button></td>
 
             </tr>
