@@ -136,9 +136,6 @@
   <widgets xsi:type="model:Label" id="47" x="294" y="262" text="Only show Subscriptions that:" measuredWidth="202" measuredHeight="29">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Label" id="48" x="360" y="538" text="Only show Subscriptions that:" measuredWidth="202" measuredHeight="29">
-    <font/>
-  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="14px"/>
