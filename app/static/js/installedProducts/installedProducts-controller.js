@@ -16,6 +16,14 @@ angular.module('subwman')
         $scope.open(id);
       };
 
+      $scope.statusbtn = function (status) {
+	if(status=="Subscribed")
+            return "btn-success";
+        else if(status=="Expired")
+            return "btn-warning";
+        else return "btn-error";
+      };
+
       $scope.delete = function (id) {
         InstalledProducts.delete({id: id},
           function () {

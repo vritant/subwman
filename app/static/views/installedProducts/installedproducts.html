@@ -1,7 +1,8 @@
 <div>
 
-    <h2>Installedproducts</h2>
-
+    <button type="button" class="btn-lg btn-warning">Installed Products</button>
+    <button type="button" class="btn-lg btn-primary">Auto Attach</button>
+    <h4>Status: System is subscribed through 12/12/2015</h4>
     <script type = "text/ng-template" id="installedProducts-save.html">
         <form name="form" role="form" novalidate
               class="ng-scope ng-invalid ng-invalid-required ng-dirty"
@@ -10,26 +11,46 @@
             <div class="modal-header">
                 <button type="button" class="close"
                         ng-click="cancel()">&times;</button>
-                <h4 class="modal-title" id="myInstalledProductsLabel">Create or edit a InstalledProducts</h4>
+                <h4 class="modal-title" id="myInstalledProductsLabel">Product's Subscription Details</h4>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label>ID</label>
-                    <input type="text" class="form-control" name="id"
-                           ng-model="installedProducts.id" readonly>
-                </div>
-
-                
-                <div class="form-group">
                     <label>name:</label>
-                    
+
                     <input type="text" class="form-control" name="name"
-                           ng-model="installedProducts.name" ng-required="true"
-                           />
+                           ng-model="installedProducts.name" readonly>
                     <span class="error" ng-show="form.name.$error.minlength">Must be at least  characters.</span>
                     <span class="error" ng-show="form.name.$error.maxlength">Must be at most  characters.</span>
                 </div>
-                
+
+
+                <div class="form-group">
+                    <label>version:</label>
+                    <input type="text" class="form-control" name="version"
+                           ng-model="installedProducts.version" readonly>
+                </div>
+
+
+                <div class="form-group">
+                    <label>arch:</label>
+                    <input type="text" class="form-control" name="arch"
+                           ng-model="installedProducts.arch" readonly>
+                </div>
+
+
+                <div class="form-group">
+                    <label>status:</label>
+                    <input type="text" class="form-control" name="status"
+                           ng-model="installedProducts.id" readonly>
+                </div>
+
+
+                <div class="form-group">
+                    <label>subscriptions:</label>
+                    <input type="text" class="form-control" name="subscriptions"
+                           ng-model="installedProducts.subscriptions" readonly>
+                </div>
+
 
             </div>
             <div class="modal-footer">
@@ -40,38 +61,40 @@
         </form>
     </script>
 
-    <button class="btn btn-primary btn-lg" ng-click="create()">
-        <span class="glyphicon glyphicon-flash"></span> Create a new InstalledProducts
-    </button>
-
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>ID</th>
-                
-                <th>name</th>
-                
+                <th>Name</th>
+
+                <th>Version</th>
+
+                <th>Status</th>
+
+                <th>Start Date</th>
+
+                <th>End Date</th>
+
+                <th/>
+
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="installedProducts in installedproducts">
-                <td>{{installedProducts.id}}</td>
-                
                 <td>{{installedProducts.name }}</td>
-                
-                <td>
-                    <button type="submit"
+
+                <td>{{installedProducts.version}}</td>
+
+                <td><button type="button" class="btn {{statusbtn(installedProducts.status)}}">{{installedProducts.status}}</button></td>
+
+                <td>{{installedProducts.startDate}}</td>
+
+                <td>{{installedProducts.endDate}}</td>
+                <td><button type="submit"
                             ng-click="update(installedProducts.id)"
-                            class="btn">
-                        <span class="glyphicon glyphicon-pencil"></span> Edit
-                    </button>
-                    <button type="submit"
-                            ng-click="delete(installedProducts.id)"
-                            class="btn btn-danger">
-                        <span class="glyphicon glyphicon-remove-circle"></span> Delete
-                    </button>
-                </td>
+                            class="btn">View
+                    </button></td>
+
             </tr>
             </tbody>
         </table>
