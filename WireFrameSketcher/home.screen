@@ -27,7 +27,7 @@
       </widgets>
     </overrides>
   </widgets>
-  <widgets xsi:type="model:Panel" id="8" x="20" y="80" width="1126" height="774" measuredWidth="1126" measuredHeight="774" border="dashed-rounded"/>
+  <widgets xsi:type="model:Panel" id="8" x="20" y="86" width="1126" height="774" measuredWidth="1126" measuredHeight="774" border="dashed-rounded"/>
   <widgets xsi:type="model:Master" id="17" x="36" y="86" width="485" measuredWidth="485" measuredHeight="19">
     <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
     <overrides>
@@ -39,7 +39,109 @@
   <widgets xsi:type="model:Master" id="19" x="36" y="120" width="1090" measuredWidth="1090" measuredHeight="337">
     <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Content.screen#Table"/>
     <overrides>
-      <widgets ref="51" width="1090" text="Product v,(w:50).Version,(w:80).Status,(w:90).Start Date,(w:90).End Date,(w:30). &#xA;Awesome OS Toolset, 2.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Another Awesome OS Toolset, 2.2, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Awesome OS Work Station, 1.2.1, (bg:yellow).Expired, 02/26/2015, 02/26/2015,[View Details] &#xA;Awesome OS Server, 2.1.4, (bg:red).Unknown, 02/26/2015, 02/26/2015,[View Details] &#xA;Awesome OS Magic, 12.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Not Awesome OS Toolset, 2.51, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Very Awesome OS, 212.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Absolutely Awesome OS Toolset, 52.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] "/>
+      <widgets ref="51" width="1090" text="Product v,(w:50).Version,(w:80).Status,(w:90).Start Date,(w:90).End Date,(w:70).View&#xA;Awesome OS Toolset, 2.1, , 02/26/2015, 02/26/2015, &#xA;Another Awesome OS Toolset, 2.2, , 02/26/2015, 02/26/2015, &#xA;Awesome OS Work Station, 1.2.1, , 02/26/2015, 02/26/2015, &#xA;Awesome OS Server, 2.1.4, , 02/26/2015, 02/26/2015, &#xA;Awesome OS Magic, 12.1, , 02/26/2015, 02/26/2015, &#xA;Not Awesome OS Toolset, 2.51, , 02/26/2015, 02/26/2015, &#xA;Very Awesome OS, 212.1, , 02/26/2015, 02/26/2015, &#xA;Absolutely Awesome OS Toolset, 52.1, , 02/26/2015, 02/26/2015, "/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="20" x="1032" y="90" width="89" height="23" measuredWidth="89" measuredHeight="23">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" width="89" height="23" text="Auto Attach"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="22" x="789" y="164" measuredWidth="71" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="69" text="Subscribed"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="23" x="789" y="352" measuredWidth="71" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="69" text="Subscribed"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="24" x="789" y="392" measuredWidth="71" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="69" text="Subscribed"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="25" x="789" y="424" measuredWidth="71" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="69" text="Subscribed"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="26" x="789" y="279" measuredWidth="71" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="69" text="Subscribed"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="27" x="789" y="312" measuredWidth="71" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="69" text="Subscribed"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="29" x="806" y="246" measuredWidth="54" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Warning"/>
+    <overrides>
+      <widgets ref="73" text="Expired"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="30" x="796" y="207" measuredWidth="64" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Danger"/>
+    <overrides>
+      <widgets ref="75" text="Unknown"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="31" x="1064" y="164" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="32" x="1064" y="199" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="33" x="1064" y="238" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="34" x="1064" y="275" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="35" x="1064" y="308" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="36" x="1064" y="348" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="37" x="1064" y="384" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="38" x="1064" y="420" measuredWidth="52" measuredHeight="27" link="productinfo.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" height="27" text="View"/>
     </overrides>
   </widgets>
   <hRuler/>

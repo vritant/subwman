@@ -29,34 +29,62 @@
     </overrides>
   </widgets>
   <widgets xsi:type="model:Panel" id="8" x="20" y="80" width="1126" height="774" measuredWidth="1126" measuredHeight="774" border="dashed-rounded"/>
-  <widgets xsi:type="model:Master" id="33" x="30" y="90" height="255" measuredWidth="1096" measuredHeight="255" link="mysubscriptions-info.screen">
+  <widgets xsi:type="model:Master" id="33" x="30" y="90" height="255" measuredWidth="1096" measuredHeight="255">
     <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Content.screen#Table"/>
     <overrides>
-      <widgets ref="51" width="1096" height="255" text="Subscription, (w:90).Installed Products,(w:90).End Date, (w:40).Quantity,(w:90). View&#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;"/>
+      <widgets ref="51" width="1096" height="255" text="Subscription, (w:90).Installed Products,(w:90).End Date, (w:40).Quantity,(w:90). View&#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;Customer SKU, (align:center).2 / 117, 02/26/2016, (align:center).2, &#xA;">
+        <attributes key="selection" value="1"/>
+      </widgets>
     </overrides>
   </widgets>
-  <widgets xsi:type="model:Master" id="42" x="1032" y="134" measuredWidth="48" measuredHeight="26" link="mysubscriptions-info.screen">
+  <widgets xsi:type="model:Master" id="42" x="1032" y="134" measuredWidth="48" measuredHeight="26">
     <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
     <overrides>
       <widgets ref="35" width="48" height="26" text="View"/>
     </overrides>
   </widgets>
-  <widgets xsi:type="model:Master" id="43" x="1032" y="169" measuredWidth="48" measuredHeight="26" link="mysubscriptions-info.screen">
+  <widgets xsi:type="model:Master" id="43" x="1032" y="169" measuredWidth="48" measuredHeight="26">
     <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
     <overrides>
       <widgets ref="35" width="48" height="26" text="View"/>
     </overrides>
   </widgets>
-  <widgets xsi:type="model:Master" id="44" x="1032" y="205" measuredWidth="48" measuredHeight="26" link="mysubscriptions-info.screen">
+  <widgets xsi:type="model:Master" id="44" x="1032" y="205" measuredWidth="48" measuredHeight="26">
     <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
     <overrides>
       <widgets ref="35" width="48" height="26" text="View"/>
     </overrides>
   </widgets>
-  <widgets xsi:type="model:Master" id="45" x="1032" y="240" measuredWidth="48" measuredHeight="26" link="mysubscriptions-info.screen">
+  <widgets xsi:type="model:Master" id="45" x="1032" y="240" measuredWidth="48" measuredHeight="26">
     <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
     <overrides>
       <widgets ref="35" width="48" height="26" text="View"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="50" x="250" y="192" measuredWidth="600" measuredHeight="488">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Content.screen#Panel%20Primary"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="72"/>
+      <widgets ref="70" width="600" height="488"/>
+      <widgets ref="71" x="8" y="8" text="Subscription Details"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="51" x="778" y="629" measuredWidth="57" measuredHeight="34" link="mysubscriptions.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" text="Close"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="52" x="258" y="248" width="576" measuredWidth="576" measuredHeight="268">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Content.screen#Table"/>
+    <overrides>
+      <widgets ref="51" width="576" height="268" text="(w:80). ,&#xA;Subscription:, Customer 's Subscriptions&#xA;SKU:, Customer SKU&#xA;Service Level / Type:, S1 / D2&#xA;Subscription Type:, Eternal Subscription&#xA;Subscriptions:,"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="54" x="368" y="440" measuredWidth="456" measuredHeight="128">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Content.screen#Table%20Condensed"/>
+    <overrides>
+      <widgets ref="53" width="456" text="Product, Installed&#xA;My Product,&#xA;Another Product,&#xA;Yet Another Product,"/>
     </overrides>
   </widgets>
   <hRuler/>
