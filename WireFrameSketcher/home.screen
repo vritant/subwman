@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="6" x="10" y="10" width="850" measuredWidth="850" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgets ref="20" width="1126"/>
+      <widgets ref="19" x="118" y="4" text="Installed Products, My Subscriptions, Available Subscriptions">
+        <items ref="@items.0" text="Installed Products"/>
+        <items ref="@items.1" text="My Subscriptions" link="mysubscriptions.screen"/>
+        <items ref="@items.2" text="Available Subscriptions" link="allSubscriptions.screen"/>
+      </widgets>
+      <widgets ref="21" text="Subwman"/>
+      <widgets ref="25" x="866" y="0" text="Options {desc}, Unregister, Quit">
+        <itemChanges xsi:type="o:Insert" newIndex="2">
+          <object xsi:type="model:Item" text="Quit"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Insert" newIndex="2">
+          <object xsi:type="model:Item" text="Unregister"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Insert" newIndex="2">
+          <object xsi:type="model:Item" link="options.screen" text="Options {desc}"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Delete" ref="@items.1"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.0"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="8" x="20" y="80" width="1126" height="774" measuredWidth="1126" measuredHeight="774" border="dashed-rounded"/>
+  <widgets xsi:type="model:Master" id="17" x="36" y="86" width="485" measuredWidth="485" measuredHeight="19">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Typography.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="69" width="485" text="Status:  System is properly subscribed through 0/27/2016.">
+        <font size="17px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="19" x="36" y="120" width="1090" measuredWidth="1090" measuredHeight="337">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Content.screen#Table"/>
+    <overrides>
+      <widgets ref="51" width="1090" text="Product v,(w:50).Version,(w:80).Status,(w:90).Start Date,(w:90).End Date,(w:30). &#xA;Awesome OS Toolset, 2.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Another Awesome OS Toolset, 2.2, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Awesome OS Work Station, 1.2.1, (bg:yellow).Expired, 02/26/2015, 02/26/2015,[View Details] &#xA;Awesome OS Server, 2.1.4, (bg:red).Unknown, 02/26/2015, 02/26/2015,[View Details] &#xA;Awesome OS Magic, 12.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Not Awesome OS Toolset, 2.51, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Very Awesome OS, 212.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] &#xA;Absolutely Awesome OS Toolset, 52.1, (bg:lightGreen).Subscribed, 02/26/2015, 02/26/2015,[View Details] "/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="14px"/>
+</model:Screen>
